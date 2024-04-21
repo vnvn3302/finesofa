@@ -25,12 +25,12 @@ header h1 {float: left; margin: 40px 0 0 56px; }
 header nav {float: right; margin-top: 60px; margin-right: 120px;}
 header nav .gnb li {float: left; position: relative;}
 header nav .gnb li a {font-size: 20px;  padding: 20px 60px; display: block; color: #fff;}
-header nav .gnb li .lnb {position: absolute; display: flex; flex-direction: column; background: #274208; justify-content: center; width: 100%; align-items: center; padding: 20PX 0; opacity: 0; left: 100px; transition: 0.5s; visibility: hidden;} 
+header nav .gnb li .lnb {position: absolute; display: flex; flex-direction: column; background: #274208; justify-content: center; width: 100%; align-items: center; padding: 20PX 0; opacity: 0; left: 100px; transition: 0.5s; visibility: hidden; } 
 header nav .gnb li .lnb li {width: 100%; height: 50px; line-height: 50px;}
 header nav .gnb li .lnb li::before {content: ''; position: absolute; width: 6px; height: 6px; background: #fff; border-radius: 50%; left: 25px; top: 22px; opacity: 0; transition: 0.5s;}
 header nav .gnb li .lnb li a {font-size: 18px; color: #fff; padding: 0; display: block; text-indent: 40px;}
 
-header nav.on .gnb li .lnb {opacity: 1; visibility: visible; left: 0; background: none;}
+header nav.on .gnb li .lnb {opacity: 1; visibility: visible; left: 0; background: transparent;}
 header nav.on .gnb li .lnb::before {content:''; width: 100%; background: #274208; height: 450px; position: absolute; left: 0; top: 0;}
 header nav.on .gnb:hover > li {filter: blur(0px);}
 header nav.on .gnb > li:hover {filter: blur(0px);}
@@ -38,7 +38,7 @@ header nav.on .gnb > li:hover {filter: blur(0px);}
 /* hover */
 header nav .gnb:hover > li {filter: blur(5px);}
 header nav .gnb > li:hover {filter: blur(0px);}
-header nav .gnb li:hover .lnb {opacity: 1; left: 0px; visibility: visible;}
+header nav .gnb li:hover .lnb {opacity: 1; left: 0px; visibility: visible; }
 header nav .gnb li .lnb li:hover::before {opacity: 1;}
 
 /* hamburger */
